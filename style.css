@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	border: border-box;
+	scroll-behavior: smooth;
+}
+.heading-font {
+	font-family: Sofia Sans Condensed;
+	font-weight: 400;
+}
+.sub-heading-font-1 {
+	font-family: Playfair Display;
+	font-style: italic;
+}
+.sub-heading-font-2 {
+	font-family: Urbanist;
+	font-weight: bold;
+}
+.text-font {
+	font-family: Sofia Sans Condensed;
+}
+a {text-decoration: none; color: inherit;}
+body {
+	background-color: #000;
+	color: #fffbed;
+	display: flex;
+	flex-direction: column;
+}
+
+button {
+	padding: 9px 32px 9px 32px;
+	font-size: 1rem;
+	border: 1px solid transparent;
+	background-color: #fffbed;
+	border: 2px solid #fffbed;
+	transition: 0.25s;
+	width: 12vw;
+	text-transform: capitalize;
+	font-family: Sofia Sans Condensed;
+	font-weight: bold;
+	color: #000;
+}
+button:hover {
+	background-color: #EDDD15;
+	border: 2px solid #000;
+	transition: 0.25s;
+}
+
+
+/*header*/
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	min-height: 100vh;
+	background-image: url("../assets/images/bg-2.gif");
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+.header-title{
+	text-align: center;
+}
+.header-title-marathi {
+	font-size: 7rem;
+	font-family: Mukta;
+	font-weight: 400;
+}
+.header-title-english {
+	font-size: 12rem;
+}
+.header-subtitle-1 {
+	font-size: 2rem;
+	font-style: italic;
+}
+.header-subtitle-2 {
+	font-size: 3rem;
+}
+.header-reviews {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 5vw;
+}
+.header-review {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*learn more section*/
+main {
+	display: flex;
+	flex-direction: column;
+	row-gap: 7vh;
+}
+
+.learn-more-buttons {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 1vw;
+}
+.learn-more-main {
+	display: flex;
+	column-gap: 5vw;
+	justify-content: center;
+	align-items: center;
+	padding: 5vh 10vw 5vh 10vw;
+}
+.learn-more-info {
+	display: flex;
+	flex-direction: column;
+	row-gap: 2vh;
+}
+.learn-more-info-credits {
+	font-size: 1.25rem;
+}
+.role {
+	font-weight: bold;
+}
+.awards {
+	padding-top: 5vh;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	column-gap: 5vw;
+}
+.awards img{
+	max-height: 12vh;
+}
+
+/*logline section*/
+.logline {
+	background-color: #000;
+	padding: 5vh 10vw 5vh 10vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 5vw;	
+}
+.logline-title h1 {
+	font-size: 4rem;
+}
+.logline-content {
+	display: flex;
+	flex-direction: column;
+	row-gap: 2vh;
+	font-size: 1.5rem;
+}
+
+/*reviews section*/
+.press {
+	text-align: center;
+	min-height: 100vh;
+	background-image: url("../assets/images/bg-2.gif");
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	padding-bottom: 2vh;
+}
+.press-grid {
+	margin: 0 25vw 0 25vw;
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-gap: 6px;
+	justify-content: center;
+	align-content: center;
+}
+.press-title h1{
+	font-size: 4rem;
+}
+.reviews-box {
+	padding: 2vw;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	cursor: pointer;
+}
+.box-1{
+	grid-column-start: 1;
+	grid-column-end: 5;
+	color: #000;
+	background-color: #fffbed;
+}
+.box-1 h2{font-size: 2.8vw;}
+.box-2{
+	grid-column-start: 5;
+	grid-column-end: 11;
+	background-color: #000;
+}
+.box-2 h2{font-size: 2.4vw;}
+.box-3{
+	grid-column-start: 1;
+	grid-column-end: 6;
+	background-color: #000;
+}
+.box-3 h2{font-size: 2.2vw;}
+.box-4{
+	grid-column-start: 6;
+	grid-column-end: 11;
+	color: #000;
+	background-color: #fffbed;
+}
+.box-4 h2{font-size: 2.2vw;}
+.box-5{
+	grid-column-start: 1;
+	grid-column-end: 7;
+	background-color: #000;
+}
+.box-5 h2{font-size: 2.2vw;}
+.box-6{
+	grid-column-start: 7;
+	grid-column-end: 11;
+	color: #000;
+	background-color: #fffbed;
+}
+.box-6 h2{font-size: 3vw;}
+.review-author-publisher{
+	font-size: 1vw;
+}
+.review-author-publisher {
+	text-transform: uppercase;
+}
+
+/*meet the team section*/
+.team {
+	background-color: #000;
+	padding: 5vh 0 5vh 0;
+}
+.team-cards {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto;
+	justify-items: center;
+	align-items: center;
+	justify-content: space-evenly;
+	align-content: start;
+}
+.team-title h1{
+	font-size: 4rem;
+	text-align: center;
+}
+.job {
+	height: 4rem;
+}
+.job h3{
+	font-size: 1rem;
+}
+.team-card {
+	display: flex;
+	flex-direction: column;
+	max-width: 16vw;
+	padding: 1vw;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 1vh;
+}
+.team-card button {
+	border: none;
+	background: none;
+	color: #fffbed;
+}
+.team-card button:hover {
+	cursor: pointer;
+}
+.team-card:hover {
+	scale: 1.05;
+	transition: 0.5s ease;
+}
+.team-card img{max-width: 16vw;}
+.more {
+	display: none;
+}
+
+/*footer*/
+footer {
+	padding: 1rem;
+	display: flex;
+	justify-content: center;
+	column-gap: 2vw;
+	font-size: 1.2rem;
+	background-image: url("../assets/images/bg-2.gif");
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+footer a:hover {
+	color: #EDDD15;
+	transition: .3s ease;
+}
+
+
+
+
+/*media queries*/
+@media (max-width: 1200px) {
+	button{
+		width: 42vw;
+		padding: 5px 10px 5px 10px;
+	}
+	header{background-attachment: scroll;}
+	.press{background-attachment: scroll;}
+	footer{background-attachment: scroll;}
+	.header-title-english{
+		font-size: 18vh;
+	}
+	.header-title-marathi{
+		font-size: 9vh;
+	}
+	p.header-subtitle-1{
+		font-size: 2.5vh;
+	}
+	p.header-subtitle-2{
+		text-align: left;
+		font-size: 4.4vh;
+	}
+	.awards {
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-items: center;
+		row-gap: 5vh;
+	}
+	.awards img{
+		max-height: 25vw;
+	}
+	.learn-more-buttons{
+		flex-direction: row;
+		column-gap: 1vw;
+	}
+	.learn-more-main{
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		row-gap: 1vh;
+		padding: 0 5vw 0 5vw;
+	}
+	.learn-more-buttons{
+		flex-direction: row;
+	}
+	.logline{
+		flex-direction: column;
+		padding: 5px 10px 5px 10px;
+	}
+	.logline-content{
+		text-align: center;
+	}
+	.press-grid {
+		margin: 0;
+	}
+	.press-grid h2{font-size: 3.2vh;}
+	.press-grid p{font-size: 1.6vh;}
+	.reviews-box {padding: 1vw;}
+	.team-cards {
+		grid-template-columns: 1fr;
+		justify-items: center;
+		align-items: center;
+		justify-content: center;
+		align-content: center;
+		grid-row-gap: 5vh;
+	}
+	.team-card {
+		max-width: 60vw;
+		padding: 1vh;
+		row-gap: 2vh;
+	}
+	.team-card img{max-width: 50vw;}
+	.job {height: 4vh;}
+}
